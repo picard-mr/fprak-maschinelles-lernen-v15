@@ -21,6 +21,22 @@ Dieser F-Praktikumsversuch nimmt Bezug auf verschiedene wissenschaftliche Paper:
 ### Frameworks
 Im Versuch wird das Deep Learning Framework [Keras](https://keras.io/) mit Backend [tensorflow](https://www.tensorflow.org/) verwendet. Fortgeschrittene Studierende, die sich mit anderen Frameworks (bspw. [PyTorch](https://pytorch.org/)) auskennen, können den Versuch gerne auch mit anderen Frameworks durchführen.
 
+### Ablauf
+Die hier verfügbaren Notebooks sollen bearbeitet werden. Dafür können die Studierenden einen PC ihrer Wahl verwenden. Allerdings werden GPUs für viele Berechnungen benötigt. Daher haben Studierende die Möglichkeit die Student-Workstation [Picard](https://picard.physik.uni-marburg.de) zu verwenden. Mit [diesem Link](https://picard.physik.uni-marburg.de/jupyterhub/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpicard-mr%2Ffprak-maschinelles-lernen-v15&urlpath=tree%2Ffprak-maschinelles-lernen-v15%2F) wird dieses Git Repository in das Home-Verzeichnis auf Picard kopiert und kann dann bearbeitet werden. Studierende, die dieses Repository ausführlicher nutzen wollen und sich bereits mit Git besser auskennen, können dieses Repository auch forken oder per SSH / HTTPS klonen.
+
+Die Notebooks sind nummeriert und sollen in dieser Reihenfolge auch abgearbeitet werden:
+1. **Die Daten:** Macht euch mit den Daten vertraut. Implementierung eines Viewers. Vorbereiten der Daten.
+5. **Otsu-Thresholding / Kantenfinden:** Ausprobieren klassischer Filter-Methoden.
+10. **Entrauschen:** Noise2Void Training.
+20. **Instance Segmentation:** Stardist Training.
+30. **Implementierung U-Net / ResNet:** Eigene Implementierung zur Semantic Segmentation. Anschließendes Training.
+40. **Validierung:** Die trainierten Modelle sollen validiert werden.
+
+Dieser Versuch erfordert nicht, dass die Studierenden körperlich anwesend sind. Erfahrungsgemäß lassen sich Probleme und Fragen jedoch einfacher persönlich besprechen. Die Studierenden werden aufgefordert einen eigenen Laptop mit zum Versuch zu bringen. In der eigenen Umgebung ist man schließlich am effektivsten. Falls dies nicht möglich ist, werden PCs für den Versuch gestellt.
+
+### Aufbau des Versuchsprotokolls
+Generell sollten alle ausgeführten Aufgaben protokolliert werden und die verschiedenen Methoden mit einander verglichen werden. Auf einen Grundlagenteil, der die verwendeten Methoden erläutert, wird Wert gelegt.
+
 ### Vereinfachungen
 Während in unserer Arbeitsgruppe auch 3-dimensionale Mikroskop-Bilder analysiert werden, werden in diesem Versuch nur 2-dimensionale Mikroskop-Bilder analysiert.
 
