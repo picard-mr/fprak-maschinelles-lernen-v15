@@ -1,5 +1,5 @@
 # F-Praktikumsversuch 15 - Maschinelles Lernen in der wissenschaftlichen Bildanalyse
-In diesem Versuch sollen Grundprinzipien des Maschinellen Lernens erlernt werden. Dabei werden Lern-Algorithmen aus dem Spektrum des Deep Learnings verwendet, um in Mikroskop-Bildern Objekte zu segmentieren. Für das Durchführen des Versuchs werden Programmierkenntnisse in Python benötigt. Während in vielen F-Praktikumsversuchen am Fachbereich ein physikalisches Phänomen untersucht wird, das durch Messungen charakterisiert wird, soll es in diesem Versuch um Vergleiche verschiedener Methoden gehen. Große physikalische Einsichten werden in diesem Versuch nicht vermittelt.
+In diesem Versuch sollen Grundprinzipien der Bildsegmentierung von Mikroskopbildern mithilfe von Deep Learning vermittelt werden. Dazu werden Intensitäten-basierte Verfahren mit den Verfahren auf Grundlage von Neuronalen Netzwerken verglichen. Neuronale Netzwerke bilden eine Klasse von Lern-Algorithmen welche auch unter schlechten Signal-zu-Rausch-Verhältnissen gute Segmentierungen poduzieren können [[1](https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-019-2880-8)]. Die Segmentierung von Mikroskopbildern ist eine Grundvoraussetzung um physikalische Phänomene innerhalb von bakteriellen Kolonien quantitativ zu beschreiben. Die Kenntnisse über verschiedene Segmentierungsverfahren gehören zum Grundlagen der Bildanalyse und sind unverzichtbar in der Auswertung von Mikroskopieexperimenten. Für diesen Versuch werden werden Programmierkenntnisse in Python benötigt.
 
 Der F-Praktikumsversuch versucht auch einige weitere Methoden / Kenntnisse zu vermitteln, mit denen Abläufe automatisiert und somit vereinfacht werden.
 
@@ -50,3 +50,7 @@ Wer sich intensiver mit den Möglichkeiten moderner Software auseinandersetzen m
 
 ## Sonstiges
 Dieser Versuch wurde von Eric Jelli konzipiert und zuerst im Sommersemester 2019 angeboten.
+
+## Referenzen
+[1] Vicar et al. Cell segmentation methods for label-free contrast microscopy: review and comprehensive comparison.
+BMC Bioinformatics, 20(1) Art. No. 360 (2019) 
