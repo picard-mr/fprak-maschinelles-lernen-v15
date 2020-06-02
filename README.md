@@ -1,7 +1,7 @@
 # F-Praktikumsversuch 15 - Maschinelles Lernen in der wissenschaftlichen Bildanalyse
 In diesem Versuch sollen Grundprinzipien der Bildsegmentierung von Mikroskopbildern mithilfe von Deep Learning vermittelt werden. Dazu werden Intensitäten-basierte Verfahren mit den Verfahren auf Grundlage von Neuronalen Netzwerken verglichen. Neuronale Netzwerke bilden eine Klasse von Lern-Algorithmen welche auch unter schlechten Signal-zu-Rausch-Verhältnissen gute Segmentierungen poduzieren können [[1](https://bmcbioinformatics.biomedcentral.com/track/pdf/10.1186/s12859-019-2880-8)]. Die Segmentierung von Mikroskopbildern ist eine Grundvoraussetzung um physikalische Phänomene innerhalb von bakteriellen Kolonien quantitativ zu beschreiben. Die Kenntnisse über verschiedene Segmentierungsverfahren gehören zum Grundlagen der Bildanalyse und sind unverzichtbar in der Auswertung von Mikroskopieexperimenten. Für diesen Versuch werden werden Programmierkenntnisse in Python benötigt.
 
-Der F-Praktikumsversuch versucht auch einige weitere Methoden / Kenntnisse zu vermitteln, mit denen Abläufe automatisiert und somit vereinfacht werden.
+Neben den theoretischen Kenntnissen sollen auch praktische Fähigkeiten bei der Erstellung von wissenschaftlicher Software geschult werden. Dazu werden einige kleinere Werkzeuge/ Methoden vorgestellt, die den Arbeitsalltag erleichtern bzw. wiederkehrende Aufgaben automatisieren können.
 
 ## Aufbau und weitere Informationen
 ### Begrifflichkeiten
