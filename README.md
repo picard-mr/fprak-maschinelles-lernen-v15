@@ -3,6 +3,9 @@ In diesem Versuch sollen Grundprinzipien der Bildsegmentierung von Mikroskopbild
 
 Neben theoretischen Kenntnissen sollen auch die praktischen Fertigkeiten bei der Erstellung von wissenschaftlicher Software geschult werden. Dazu werden einige kleinere Werkzeuge/ Methoden vorgestellt, die das Programmieren erleichtern bzw. wiederkehrende Aufgaben automatisieren können und sich in der Praxis bewährt haben.
 
+[1] Cell segmentation methods for label-free contrast microscopy: review and comprehensive comparison. Tomas Vicar, Jan Balvan, Josef Jaros, Florian Jug, Radim Kolar, Michal Masarik, Jaromir Gumulec.
+BMC Bioinformatics, 20(1) Art. No. 360 (2019) 
+
 ## Aufbau und weitere Informationen
 ### Begrifflichkeiten
 Für einen reibunglosen Ablauf werden Kenntnisse über folgende Begrifflichkeiten vorausgesetzt:
@@ -26,38 +29,30 @@ IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Long Beac
 Im Rahmen des Versuchs wird mit den auf GitHub zur Verfügung gestellten Python Modulen gearbeitet.
 
 ### Frameworks
-Um die Benutztung von neuronalen Netzwerken zu erleichtern, können Studierende mittlerweile auf zahlreichen Deep Learning Framework zurückgreifen. Diese übernehmen zumeist die hardware-nahe Implementierung der rechenlastigen Algorithmen und erlauben den Zugriff über eine komfortable Python Schnittstelle. Der Versuch ist auf die Benutzung von [Keras](https://keras.io/) mit [tensorflow](https://www.tensorflow.org/) Backend ausgelegt. Fortgeschrittene Studierende, die Erfahrungen mit anderen Frameworks mitbringen, ist die Frameworkwahl freigestellt.
+Um die Benutztung von neuronalen Netzwerken zu erleichtern, können Studierende mittlerweile auf zahlreichen Deep Learning Framework zurückgreifen. Diese übernehmen zumeist die hardware-nahe Implementierung der rechenlastigen Algorithmen, erleichtern die Nutzung von Graphic Processing Units (GPUs) zur beschleunigten Ausführung und erlauben den Zugriff über eine komfortable Python Schnittstelle. Der Versuch ist auf die Benutzung von [Keras](https://keras.io/) mit [tensorflow](https://www.tensorflow.org/) Backend ausgelegt. Fortgeschrittene Studierende, die Erfahrungen mit anderen Frameworks mitbringen, ist die Frameworkwahl freigestellt.
 
 ### Ablauf
-Die hier verfügbaren Notebooks sollen bearbeitet werden. Dafür können die Studierenden einen PC ihrer Wahl verwenden. Allerdings werden GPUs für viele Berechnungen benötigt. Daher haben Studierende die Möglichkeit die Student-Workstation [Picard](https://picard.physik.uni-marburg.de) zu verwenden. Mit [diesem Link](https://picard.physik.uni-marburg.de/jupyterhub/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpicard-mr%2Ffprak-maschinelles-lernen-v15&urlpath=tree%2Ffprak-maschinelles-lernen-v15%2F) wird dieses Git Repository in das Home-Verzeichnis auf Picard kopiert und kann dann bearbeitet werden. Studierende, die dieses Repository ausführlicher nutzen wollen und sich bereits mit Git besser auskennen, können dieses Repository auch forken oder per SSH / HTTPS klonen.
+Für die Berarbeitung der Aufgaben wird ein Computer mit Internetzugang und einem aktuellen Browser benötigt - auf Anfrage kann dieser auch gestellt werde. Alle Aufgaben werden in Form von [Jupyter Notebooks](https://jupyter.org/) gestellt und sind in diesem GitHub-Repository zu finden. Um die Aufgaben innerhalb der gegebenen Zeit zu berarbeiten wird der Zugriff auf aktuelle GPUs benötigt. Zugriff auf entsprechende Hardware kann die Student-Workstation [Picard](https://picard.physik.uni-marburg.de) zur Verfügung gestellt werden. Mit [diesem Link](https://picard.physik.uni-marburg.de/jupyterhub/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpicard-mr%2Ffprak-maschinelles-lernen-v15&urlpath=tree%2Ffprak-maschinelles-lernen-v15%2F) werden die Aufgaben (inkl. dieser Anleitung) in das entsprechende Verzeichnis kopiert und steht unmittelbar zur Bearbeitung zur Verfügung. Unabhängig von der Workstation steht es den Studierenden frei die Aufaben auch auf eigener Hardware zu lösen.
 
-Die Notebooks sind nummeriert und sollen in dieser Reihenfolge auch abgearbeitet werden:
+Die Notebooks sind nummeriert. Es wird empfohlen die Aufgaben in der vorgeschlagenen Reihenfolge zu bearbeiten:
 1. **Die Daten:** Macht euch mit den Daten vertraut. Implementierung eines Viewers. Vorbereiten der Daten.
 5. **Otsu-Thresholding / Kantenfinden:** Ausprobieren klassischer Filter-Methoden.
-10. **Entrauschen:** Noise2Void Training.
-20. **Instance Segmentation:** Stardist Training.
-30. **Implementierung U-Net / ResNet:** Eigene Implementierung zur Semantic Segmentation. Anschließendes Training.
+10. **Entrauschen:** *Noise2Void* Training.
+20. **Instance Segmentation:** *Stardist* Training.
+30. **Implementierung U-Net / ResNet:** Eigene Implementierung zur *Semantic Segmentation*. Anschließendes Training.
 40. **Validierung:** Die trainierten Modelle sollen validiert werden.
 
-Dieser Versuch erfordert nicht, dass die Studierenden körperlich anwesend sind. Erfahrungsgemäß lassen sich Probleme und Fragen jedoch einfacher persönlich besprechen. Die Studierenden werden aufgefordert einen eigenen Laptop mit zum Versuch zu bringen. In der eigenen Umgebung ist man schließlich am effektivsten. Falls dies nicht möglich ist, werden PCs für den Versuch gestellt.
+Obwohl die Aufgaben an einem beliebigen Ort mit Internetzugang bearbeitet werden können, raten wir ausrücklich zu einer Bearbeitung vor Ort. Erfahrungsgemäß lassen sich Probleme und Fragen schneller persönlich aus dem Weg räumen.
+
+Sollte dennoch eine Bearbeitung Zuhause/ remote gewünscht sein, wird um eine kurze Rückmeldung gebeten. Bitte teilt auch zeitnah mit, ob ihr einen Computer gestellt bekommen wollt.
 
 ### Aufbau des Versuchsprotokolls
-Generell sollten alle ausgeführten Aufgaben protokolliert werden und die verschiedenen Methoden mit einander verglichen werden. Auf einen Grundlagenteil, der die verwendeten Methoden erläutert, wird Wert gelegt.
+Generell sollten alle ausgeführten Aufgaben protokolliert werden und die verschiedenen Methoden miteinander verglichen werden. Auf einen Grundlagenteil, der die verwendeten Methoden erläutert, wird Wert gelegt.
 
-### Vereinfachungen
-Während in unserer Arbeitsgruppe auch 3-dimensionale Mikroskop-Bilder analysiert werden, werden in diesem Versuch nur 2-dimensionale Mikroskop-Bilder analysiert.
-
-## Weitere Tools
-### Jupyter
-Fast der gesamte Versuch wird in einem Jupyter Notebook durchgeführt. Das [Project Juypter](https://jupyter.org/) ist sehr beeindruckend und kann das Entwickeln und Teilen von Code, sowie das Programmieren Lernen sehr erleichtern.
-### Git
-Die Versionskontroll-Software [Git](https://git-scm.com/) sollte jeder beherrschend, der Code schreibt. Sie kann aber auch hilfreich sein, wenn man zu zweit an einem tex-Dokument arbeitet und Änderungen einfach einarbeiten möchte. Ein Account bei [Github](https://github.com/) oder [Bitbucket](https://bitbucket.org/product/) ist kostenlos. Über das Intranet ist aber auch das eigene interne [Fachbereichs-Git](https://git.physik.uni-marburg.de/) erreichbar, das auf [GitLab](https://about.gitlab.com/) basiert.
-### Über diesen Versuch hinaus
-Wer sich intensiver mit den Möglichkeiten moderner Software auseinandersetzen möchte, sollte sich das [Missing Semester](https://git-scm.com/) anschauen.
+## Werkzeuge/ Tools
+* [Project Juypter](https://jupyter.org/)
+* [Git](https://git-scm.com/) (Versionskontrolle) z.B. im Webinterface: [Fachbereich Physik](https://git.physik.uni-marburg.de/) (VPN), [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/product/), [GitLab](https://about.gitlab.com/). (Auch sehr nützlich für tex-Dokumente)
+* Für eine Übersicht über weitere nützliche Werkzeuge/ Methoden in der wissenschaftlichen Softwareentwicklung ist das [Missing Semester](https://git-scm.com/) sehr zu empfehlen.
 
 ## Sonstiges
 Dieser Versuch wurde von Eric Jelli konzipiert und zuerst im Sommersemester 2019 angeboten.
-
-## Referenzen
-[1] Vicar et al. Cell segmentation methods for label-free contrast microscopy: review and comprehensive comparison.
-BMC Bioinformatics, 20(1) Art. No. 360 (2019) 
