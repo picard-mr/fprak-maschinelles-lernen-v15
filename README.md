@@ -12,11 +12,18 @@ Für einen reibunglosen Ablauf werden Kenntnisse über folgende Begrifflichkeite
 - *Loss Function*
 - Repräsentationen von Formen / Objekten in Computern
 
-### Paper
-Dieser F-Praktikumsversuch nimmt Bezug auf verschiedene wissenschaftliche Paper:
-- [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597), Olaf Ronneberger, Philipp Fischer, Thomas Brox, 2015
-- Die zwei [stardist Paper](https://github.com/mpicbg-csbd/stardist) und ihre Implementierung auf Github.
-- [Noise2Void - Learning Denoising from Single Noisy Images](https://arxiv.org/abs/1811.10980), Alexander Krull, Tim-Oliver Buchholz, Florian Jug, 2019 und Implementierung auf [Github](https://github.com/juglab/n2v)
+### Literatur
+Die in verwendeten Algorithmen wurden in folgenden Publikationen vorgestellt:
+- [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://link.springer.com/chapter/10.1007/978-3-319-24574-4_28). Olaf Ronneberger, Philipp Fischer, Thomas Brox.
+Medical Image Computing and Computer-Assisted Intervention (MICCAI), Springer, LNCS, Vol.9351: 234--241, 2015 ([preprint link](https://arxiv.org/abs/1505.04597))
+- [Cell Detection with Star-convex Polygons](https://link.springer.com/chapter/10.1007/978-3-030-00934-2_30).
+Uwe Schmidt, Martin Weigert, Coleman Broaddus, and Gene Myers.
+International Conference on Medical Image Computing and Computer-Assisted Intervention (MICCAI), Springer, LNCS, Vol.11071, 2018 ([preprint link](https://arxiv.org/abs/1806.03535))
+- [Star-convex Polyhedra for 3D Object Detection and Segmentation in Microscopy](https://ieeexplore.ieee.org/document/9093435). Martin Weigert, Uwe Schmidt, Robert Haase, Ko Sugawara, and Gene Myers. IEEE Winter Conference on Applications of Computer Vision (WACV), Snowmass Village, CO, USA, 2020, pp. 3655-3662 ([Open Access version](http://openaccess.thecvf.com/content_WACV_2020/papers/Weigert_Star-convex_Polyhedra_for_3D_Object_Detection_and_Segmentation_in_Microscopy_WACV_2020_paper.pdf)) ([github link](https://github.com/mpicbg-csbd/stardist))
+- [Noise2Void - Learning Denoising from Single Noisy Images](https://ieeexplore.ieee.org/abstract/document/8954066). Alexander Krull, Tim-Oliver Buchholz, Florian Jug.
+IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Long Beach, CA, USA, 2019, pp. 2124-2132 ([Open Access version](http://openaccess.thecvf.com/content_CVPR_2019/papers/Krull_Noise2Void_-_Learning_Denoising_From_Single_Noisy_Images_CVPR_2019_paper.pdf)) ([Github](https://github.com/juglab/n2v))
+
+Im Rahmen des Versuchs wird mit den auf GitHub zur Verfügung gestellten Python Modulen gearbeitet.
 
 ### Frameworks
 Im Versuch wird das Deep Learning Framework [Keras](https://keras.io/) mit Backend [tensorflow](https://www.tensorflow.org/) verwendet. Fortgeschrittene Studierende, die sich mit anderen Frameworks (bspw. [PyTorch](https://pytorch.org/)) auskennen, können den Versuch gerne auch mit anderen Frameworks durchführen.
