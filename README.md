@@ -52,7 +52,7 @@ Generell sollten alle ausgeführten Aufgaben protokolliert werden und die versch
 ## Werkzeuge/ Tools
 * [Project Juypter](https://jupyter.org/)
 * [Git](https://git-scm.com/) (Versionskontrolle) z.B. im Webinterface: [Fachbereich Physik](https://git.physik.uni-marburg.de/) (VPN), [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/product/), [GitLab](https://about.gitlab.com/). (Auch sehr nützlich für tex-Dokumente)
-* Für eine Übersicht über weitere nützliche Werkzeuge/ Methoden in der wissenschaftlichen Softwareentwicklung ist das [Missing Semester](https://git-scm.com/) sehr zu empfehlen.
+* Für eine Übersicht über weitere nützliche Werkzeuge/ Methoden in der wissenschaftlichen Softwareentwicklung ist das [Missing Semester](https://missing.csail.mit.edu/) sehr zu empfehlen.
 
 ## Sonstiges
 Dieser Versuch wurde von Eric Jelli konzipiert und zuerst im Sommersemester 2019 angeboten.
