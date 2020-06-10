@@ -11,7 +11,7 @@ BMC Bioinformatics, 20(1) Art. No. 360 (2019)
 Für einen reibunglosen Ablauf werden Kenntnisse über folgende Begrifflichkeiten vorausgesetzt:
 - klassische Segmentierung: Wie funktionieren Bild Filter am Beispiel von Gauß-, Mean-, Median-, Min- und Max-Filter? Was bedeutet *Otsu Thresholding*?
 - Theoretische Grundlagen des Deep Learning: *Universal approximation theorem*, *Stochastic Gradient Descent*, *Aktivierungsfunktionen*
-- *U-Net* als Beispiel eines *Convolutional Neuronal Network* / *Auto-Encoder*: Was sind *Konvolutionen*, *Padding*, *Dense Layer*, *Pooling* und *Upsampling*? Welchen Einfluss hat die *Kernel* Größe?
+- *U-Net* als Beispiel eines *Convolutional Neuronal Network* / *Auto-Encoder*: Was sind *Konvolutionen*, *Padding*, *Stride*, *Dense Layer*, *Pooling* und *Upsampling*? Welchen Einfluss hat die *Kernel* Größe?
 - *Semantical* vs. *Instance Segmentation*
 - Unterscheidung von *Unsupervised* und *Supervised Learning*
 - *Loss Function*
