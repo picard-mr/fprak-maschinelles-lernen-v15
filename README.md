@@ -9,6 +9,7 @@ BMC Bioinformatics, 20(1) Art. No. 360 (2019)
 ## Aufbau und weitere Informationen
 ### Begrifflichkeiten
 Für einen reibunglosen Ablauf werden Kenntnisse über folgende Begrifflichkeiten vorausgesetzt:
+- klassische Segmentierung: Wie funktionieren Bild Filter am Beispiel von Gauß-, Mean-, Median-, Min- und Max-Filter? Was bedeutet *Otsu Thresholding*?
 - Theoretische Grundlagen des Deep Learning: *Universal approximation theorem*, *Stochastic Gradient Descent*, *Aktivierungsfunktionen*
 - *U-Net* als Beispiel eines *Convolutional Neuronal Network* / *Auto-Encoder*
 - *Semantical* vs. *Instance Segmentation*
