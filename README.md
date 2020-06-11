@@ -11,11 +11,19 @@ BMC Bioinformatics, 20(1) Art. No. 360 (2019)
 Für einen reibunglosen Ablauf werden Kenntnisse über folgende Begrifflichkeiten vorausgesetzt:
 - klassische Segmentierung: Wie funktionieren Bild Filter am Beispiel von Gauß-, Mean-, Median-, Min- und Max-Filter? Was bedeutet *Otsu Thresholding*?
 - Theoretische Grundlagen des Deep Learning: *Universal approximation theorem*, *Stochastic Gradient Descent*, *Aktivierungsfunktionen*
-- *U-Net* als Beispiel eines *Convolutional Neuronal Network* / *Auto-Encoder*: Was sind *Konvolutionen*, *Padding*, *Stride*, *Dense Layer*, *Pooling* und *Upsampling*? Welchen Einfluss hat die *Kernel* Größe?
-- *Semantical* vs. *Instance Segmentation*
+- *U-Net* als Beispiel eines *Convolutional Neuronal Network* / *Auto-Encoder*: Was sind *Konvolutionen* und was bedeuten die Begriffe *Padding*, *Stride*, *Filter* oder *Channels*? Was sind *Dense Layer*, *Pooling* und *Upsampling*? Welchen Einfluss hat die *Kernel* Größe?
+- *Semantical* vs. *Instance Segmentation* oder Unterschied: Binärbild vs. Label Map
 - Unterscheidung von *Unsupervised* und *Supervised Learning*
 - *Loss Function*
-- Repräsentationen von Objekten in Computern: Binärbilder, Label Maps, Polygonzüge
+
+## Links zur Vorbereitung
+- [2D-Convolutions in der Keras Documentation](https://keras.io/api/layers/convolution_layers/convolution2d/)
+- [Label Map in der scikit-image Documentation](https://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.label)
+- Vincent Dumoulin, Francesco Visin - [A guide to convolution arithmetic for deep learning](https://github.com/vdumoulin/conv_arithmetic)
+- [DataScience StackExchange Antwort](https://datascience.stackexchange.com/questions/52015/what-is-the-difference-between-semantic-segmentation-object-detection-and-insta) zu *Semantic* vs. *Instance Segmentation*
+- [Video](https://youtu.be/LT8L3vSLQ2Q) aus aktueller Online Vorlesung Bio Image Analysis zu klassischen Filtern
+
+Nicht alle Begriffe müssen vor dem Versuch einwandfrei erklärt werden. Diese Begriffe sollen am Ende des Versuchs (Abgabe des finalen Protokolls) verstanden und korrekt eingeordnet werden können.
 
 ### Literatur
 Die im Versuch verwendeten Algorithmen wurden in folgenden Publikationen vorgestellt:
