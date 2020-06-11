@@ -16,7 +16,7 @@ Für einen reibunglosen Ablauf werden Kenntnisse über folgende Begrifflichkeite
 - Unterscheidung von *Unsupervised* und *Supervised Learning*
 - *Loss Function*
 
-## Links zur Vorbereitung
+#### Links zur Vorbereitung
 - [2D-Convolutions in der Keras Documentation](https://keras.io/api/layers/convolution_layers/convolution2d/)
 - [Label Map in der scikit-image Documentation](https://scikit-image.org/docs/dev/api/skimage.measure.html#skimage.measure.label)
 - Vincent Dumoulin, Francesco Visin - [A guide to convolution arithmetic for deep learning](https://github.com/vdumoulin/conv_arithmetic)
