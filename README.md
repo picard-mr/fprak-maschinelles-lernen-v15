@@ -26,7 +26,7 @@ Für einen reibunglosen Ablauf werden Kenntnisse über folgende Begrifflichkeite
 Nicht alle Begriffe müssen vor dem Versuch einwandfrei erklärt werden. Diese Begriffe sollen am Ende des Versuchs (Abgabe des finalen Protokolls) verstanden und korrekt eingeordnet werden können.
 
 #### Notebooks zur Vorbereitung
-Studierende mit Python-Kenntnissen können zur Vorbereitung die Schritte [dieses tensorflow Tutorials](https://www.tensorflow.org/tutorials/keras/classification) durcharbeiten. Das Tutorial wurde als Notebook mit dem Namen [tensorflow_classifiction.ipynb] in dieses Repository kopiert. Unter **Ablauf** (weiter unten) wird erklärt, wie es auf der Workstation picard ausprobiert werden kann.
+Studierende mit Python-Kenntnissen können zur Vorbereitung die Schritte [dieses tensorflow Tutorials](https://www.tensorflow.org/tutorials/keras/classification) durcharbeiten. Das Tutorial wurde als Notebook mit dem Namen [tensorflow_classification.ipynb](tensorflow_classification.ipynb) in dieses Repository kopiert. Unter **Ablauf** (weiter unten) wird erklärt, wie es auf der Workstation picard ausprobiert werden kann.
 
 Studierende ohne Python-Kenntnisse oder Studierende, die mit dem obigen Notebook Schwierigkeiten haben, sollten sich möglichst bald bei dem Betreuer des Versuchs melden.
 
