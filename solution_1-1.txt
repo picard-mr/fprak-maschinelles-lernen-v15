@@ -1,0 +1,11 @@
+slx = slice(400, 800)
+sly = slice(400, 800)
+plt.figure(figsize=(16,10))
+plt.imshow(img[sly, slx], cmap='gray')
+plt.imshow(lbl[sly, slx], cmap=lbl_cmap, alpha=0.2)
+plt.axis('off')
+plt.title('Input mit Segmentierung')
+
+scalebar = ScaleBar(0.2) # 1 pixel = 0.2 meter
+plt.gca().add_artist(scalebar)
+None;
