@@ -15,6 +15,7 @@ Für einen reibunglosen Ablauf werden Kenntnisse über folgende Begrifflichkeite
 - *Semantical* vs. *Instance Segmentation* oder Unterschied: Binärbild vs. Label Map
 - Unterscheidung von *Unsupervised* und *Supervised Learning*
 - *Loss Function*
+- Was sind *true positives*, *recall*, *precision*, etc?
 
 #### Links zur Vorbereitung
 - [2D-Convolutions in der Keras Documentation](https://keras.io/api/layers/convolution_layers/convolution2d/)
@@ -22,11 +23,12 @@ Für einen reibunglosen Ablauf werden Kenntnisse über folgende Begrifflichkeite
 - Vincent Dumoulin, Francesco Visin - [A guide to convolution arithmetic for deep learning](https://github.com/vdumoulin/conv_arithmetic)
 - [DataScience StackExchange Antwort](https://datascience.stackexchange.com/questions/52015/what-is-the-difference-between-semantic-segmentation-object-detection-and-insta) zu *Semantic* vs. *Instance Segmentation*
 - [Video](https://youtu.be/LT8L3vSLQ2Q) aus aktueller Online Vorlesung Bio Image Analysis zu klassischen Filtern
+- Wikipedia Eintrag zur [Beurteilung eines binären_Klassifikators](https://de.wikipedia.org/wiki/Beurteilung_eines_bin%C3%A4ren_Klassifikators)
 
 Nicht alle Begriffe müssen vor dem Versuch einwandfrei erklärt werden. Diese Begriffe sollen am Ende des Versuchs (Abgabe des finalen Protokolls) verstanden und korrekt eingeordnet werden können.
 
 #### Notebooks zur Vorbereitung
-Studierende mit Python-Kenntnissen können zur Vorbereitung die Schritte [dieses tensorflow Tutorials](https://www.tensorflow.org/tutorials/keras/classification) durcharbeiten. Das Tutorial wurde als Notebook mit dem Namen [tensorflow_classification.ipynb](tensorflow_classification.ipynb) in dieses Repository kopiert. Unter [Ablauf](#ablauf) wird erklärt, wie es auf der Workstation picard ausprobiert werden kann.
+Studierende mit Python-Kenntnissen können zur Vorbereitung die Schritte [dieses tensorflow Tutorials](https://www.tensorflow.org/tutorials/keras/classification) durcharbeiten. Das Tutorial wurde als Notebook mit dem Namen [tensorflow_classification.ipynb](tensorflow_classification.ipynb) in das vorliegende Repository kopiert. Unter [Ablauf](#ablauf) wird erklärt, wie es auf der Workstation picard ausprobiert werden kann.
 
 Studierende ohne Python-Kenntnisse oder Studierende, die mit dem obigen Notebook Schwierigkeiten haben, sollten sich möglichst bald bei dem Betreuer des Versuchs melden.
 
@@ -47,7 +49,7 @@ Im Rahmen des Versuchs wird mit den auf GitHub zur Verfügung gestellten Python 
 Um die Benutztung von neuronalen Netzwerken zu erleichtern, können Studierende mittlerweile auf zahlreichen Deep Learning Frameworks zurückgreifen. Diese übernehmen zumeist die Hardware nahe Implementierung der rechenlastigen Algorithmen, erleichtern die Nutzung von Graphic Processing Units (GPUs) zur beschleunigten Ausführung und erlauben den Zugriff über eine komfortable Python Schnittstelle. Der Versuch ist auf die Benutzung von [Keras](https://keras.io/) mit [tensorflow](https://www.tensorflow.org/) Backend ausgelegt. Fortgeschrittene Studierende, die Erfahrungen mit anderen Frameworks mitbringen, ist die Framework-Wahl freigestellt.
 
 ### Ablauf
-Für die Bearbeitung der Aufgaben wird ein Computer mit Internetzugang und einem aktuellen Browser benötigt - auf Anfrage kann dieser auch gestellt werden. Alle Aufgaben werden in Form von [Jupyter Notebooks](https://jupyter.org/) gestellt und sind in diesem GitHub-Repository zu finden. Um die Aufgaben innerhalb der gegebenen Zeit zu berarbeiten wird der Zugriff auf aktuelle GPUs benötigt. Zugriff auf entsprechende Hardware kann durch die Student-Workstation [Picard](https://picard.physik.uni-marburg.de) zur Verfügung gestellt werden. Mit [diesem Link](https://picard.physik.uni-marburg.de/jupyterhub/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpicard-mr%2Ffprak-maschinelles-lernen-v15&urlpath=tree%2Ffprak-maschinelles-lernen-v15%2F) werden die Aufgaben (inkl. dieser Anleitung) in das entsprechende Verzeichnis kopiert und stehen unmittelbar zur Bearbeitung zur Verfügung (eine [Registrierung](https://picard.physik.uni-marburg.de/shibboleth/) mit dem students-Account ist vorab nötig). Unabhängig von der Workstation steht es den Studierenden frei die Aufaben auch auf eigener Hardware zu lösen.
+Für die Bearbeitung der Aufgaben wird ein Computer mit Internetzugang und einem aktuellen Browser benötigt - auf Anfrage kann dieser auch gestellt werden. Alle Aufgaben werden in Form von [Jupyter Notebooks](https://jupyter.org/) gestellt und sind in diesem GitHub-Repository zu finden. Um die Aufgaben innerhalb der gegebenen Zeit zu berarbeiten wird der Zugriff auf aktuelle GPUs benötigt. Zugriff auf entsprechende Hardware kann durch die Student-Workstation [Picard](https://picard.physik.uni-marburg.de) zur Verfügung gestellt werden. Mit [diesem Link](https://picard.physik.uni-marburg.de/jupyterhub/hub/user-redirect/git-pull?repo=https%3A%2F%2Fgithub.com%2Fpicard-mr%2Ffprak-maschinelles-lernen-v15&urlpath=tree%2Ffprak-maschinelles-lernen-v15%2F) (Python 3 GPU als Server wählen!) werden die Aufgaben (inkl. dieser Anleitung) in das entsprechende Verzeichnis kopiert und stehen unmittelbar zur Bearbeitung zur Verfügung (eine [Registrierung](https://picard.physik.uni-marburg.de/shibboleth/) mit dem students-Account ist vorab nötig). Unabhängig von der Workstation steht es den Studierenden frei die Aufaben auch auf eigener Hardware zu lösen.
 
 Die Notebooks sind nummeriert. Es wird empfohlen die Aufgaben in der vorgeschlagenen Reihenfolge zu bearbeiten:
 1. **Die Daten:** Macht euch mit den Daten vertraut. Implementierung eines Viewers. Vorbereiten der Daten.
@@ -69,7 +71,7 @@ Generell sollten alle ausgeführten Aufgaben protokolliert werden und die versch
 ## Werkzeuge/ Tools
 * [Project Juypter](https://jupyter.org/)
 * [Git](https://git-scm.com/) (Versionskontrolle) z.B. im Webinterface: [Fachbereich Physik](https://git.physik.uni-marburg.de/) (VPN), [GitHub](https://github.com/), [Bitbucket](https://bitbucket.org/product/), [GitLab](https://about.gitlab.com/). (Auch sehr nützlich für tex-Dokumente)
-* Für eine Übersicht über weitere nützliche Werkzeuge/ Methoden in der wissenschaftlichen Softwareentwicklung ist das [Missing Semester](https://git-scm.com/) sehr zu empfehlen.
+* Für eine Übersicht über weitere nützliche Werkzeuge/ Methoden in der wissenschaftlichen Softwareentwicklung ist das [Missing Semester](https://missing.csail.mit.edu/) sehr zu empfehlen.
 
 ## Sonstiges
 Dieser Versuch wurde von Eric Jelli konzipiert und zuerst im [Sommersemester 2019](https://git.physik.uni-marburg.de/Jelli/f_praktikum_sose_v15) angeboten.
