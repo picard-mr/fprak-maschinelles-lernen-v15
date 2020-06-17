@@ -57,7 +57,7 @@ Die Notebooks sind nummeriert. Es wird empfohlen die Aufgaben in der vorgeschlag
 10. **Entrauschen:** *Noise2Void* Training.
 20. **Instance Segmentation:** *Stardist* Training.
 30. **Implementierung U-Net / ResNet:** Eigene Implementierung zur *Semantic Segmentation*. Anschließendes Training.
-40. **Validierung:** Die trainierten Modelle sollen validiert werden.
+40. **Validierung:** Die trainierten Modelle sollen validiert und miteinander verglichen werden.
 
 60. **Freiwillige Aufgaben:** interessierte Studierende können weitere Aufgaben erhalten, um aktuelle Probeleme mit eigenen Ideen zu lösen.
 
