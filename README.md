@@ -74,4 +74,4 @@ Generell sollten alle ausgeführten Aufgaben protokolliert werden und die versch
 * Für eine Übersicht über weitere nützliche Werkzeuge/ Methoden in der wissenschaftlichen Softwareentwicklung ist das [Missing Semester](https://missing.csail.mit.edu/) sehr zu empfehlen.
 
 ## Sonstiges
-Dieser Versuch wurde von Eric Jelli konzipiert und zuerst im [Sommersemester 2019](https://git.physik.uni-marburg.de/Jelli/f_praktikum_sose_v15) angeboten.
+Dieser Versuch wurde von Eric Jelli konzipiert und zuerst im [Sommersemester 2019](https://git.physik.uni-marburg.de/Jelli/f_praktikum_sose_v15) angeboten. Niklas Netter hat den Versuch ein wenig umgebaut und in den Sommersemestern 2020 und 2021 angeboten.
